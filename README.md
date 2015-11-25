@@ -1,2 +1,0 @@
-# CS320Project
-The name of the project is Who Wants to be a Billionaire which we will work on java. The program will ask couple of questions to the user from the question pool.After each correct answer the next ones will be getting harder according to the question pool in code.If user cannot be able to answer the question there are couple of jokers for to help user to be able to pick the right answer.If the user answer all of the questions correctly he or she get the prize and code ends.
