@@ -2,7 +2,7 @@ public class Main extends JFrame {
 
     public Main() throws IOException {
 
-    	setTitle("Kim Milyoner Olmak ƒ∞ster?");
+    	setTitle("Kim Milyoner Olmak İster?");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
         setResizable(false);
