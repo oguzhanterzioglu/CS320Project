@@ -63,3 +63,21 @@ private int width;
 		choiceD.setForeground(Color.white);
 		choiceD.setFont(new Font("Serif", Font.PLAIN, 18));
 		choiceD.setBounds(460,515, 200, 50);
+		audienceImage = new JLabel("");
+		audienceImage.setBounds(500,80,200,250);
+		phoneLogo = new JLabel("");
+		phoneLogo.setBounds(80, 80, 50, 50);
+		phoneAnswer = new JLabel("");
+		phoneAnswer.setBounds(80, 130, 120, 70);
+		
+		time = new JLabel("");
+		time.setBounds(385,480, 35, 35);
+		time.setForeground(Color.orange);
+		time.setFont(new Font("Serif", Font.PLAIN, 32));
+		
+		firstJokerCross = new JLabel("");
+		firstJokerCross.setBounds(540, 22, 50, 30);
+		secondJokerCross = new JLabel("");
+		secondJokerCross.setBounds(630, 22, 50, 30);
+		thirdJokerCross = new JLabel("");
+		thirdJokerCross.setBounds(730, 22, 50, 30);
