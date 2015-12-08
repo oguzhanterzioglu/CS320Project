@@ -25,3 +25,10 @@ public void mouseClicked(MouseEvent e) {
 				e1.printStackTrace();
 			}
 	}
+	else if(mouseX > 531 & mouseX < 602 & mouseY > 25 & mouseY < 63 && !menu.game.didUsejoker50 && menu.gameStarted)
+		try {
+			menu.game.use50joker();
+		} catch (IOException e3) {
+			// TODO Auto-generated catch block
+			e3.printStackTrace();
+		}
