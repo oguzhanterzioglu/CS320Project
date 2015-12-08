@@ -85,7 +85,7 @@ public void start() {
 		}
 		
 	}
-
+ 
 	public Question getCurrentQuestion() {
 		return menu.getQuestion();
 	}
