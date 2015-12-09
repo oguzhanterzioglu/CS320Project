@@ -190,6 +190,7 @@ public void start() {
 					e1.printStackTrace();
 				}
 				timer.stop();
+				1
 			}
 		});
 	}
