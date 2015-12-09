@@ -81,3 +81,35 @@ private int width;
 		secondJokerCross.setBounds(630, 22, 50, 30);
 		thirdJokerCross = new JLabel("");
 		thirdJokerCross.setBounds(730, 22, 50, 30);
+		
+		moneyTree = new JLabel("");
+		moneyTree.setBounds(10,60, 190, 270);
+		currentQuestion = new JLabel("");
+		currentQuestion.setBounds(15, 60, 200, 50);
+		currentQuestion.setForeground(Color.white);
+		currentQuestion.setFont(new Font("Serif", Font.PLAIN, 18));
+		
+		prize = new JLabel("Your Prize: 0");
+		prize.setBounds(225, 325, 500, 75);
+		prize.setForeground(Color.white);
+		prize.setFont(new Font("Serif", Font.PLAIN, 44));
+
+		currentScreen = new JLabel(getImage("image/ana ekran.png"));
+		currentScreen.add(questionLabel);
+		currentScreen.add(timerLabel);
+		currentScreen.add(choiceA);
+		currentScreen.add(choiceB);
+		currentScreen.add(choiceC);
+		currentScreen.add(choiceD);
+		currentScreen.add(audienceImage);
+		currentScreen.add(firstJokerCross);
+		currentScreen.add(secondJokerCross);
+		currentScreen.add(thirdJokerCross);
+		currentScreen.add(phoneAnswer);
+		currentScreen.add(phoneLogo);
+		currentScreen.add(time);
+		currentScreen.add(currentQuestion);
+		currentScreen.add(moneyTree);
+		currentScreen.add(prize);
+		this.add(currentScreen);
+	}
