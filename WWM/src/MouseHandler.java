@@ -41,4 +41,22 @@ public void mouseClicked(MouseEvent e) {
 				e1.printStackTrace();
 			}
 	 }
- 
+ else if(mouseX > 719 & mouseX < 788 & mouseY > 25 & mouseY < 63 && !menu.game.didUseJokerAudience && menu.gameStarted){
+
+		try {
+			menu.game.useAudinceJoker();
+		} catch (IOException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
+	 }
+	 
+	else if(mouseX > 12 && mouseX < 81 && mouseY > 25 && mouseY < 63) {
+		
+		try {
+			menu.showLevel();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	}
