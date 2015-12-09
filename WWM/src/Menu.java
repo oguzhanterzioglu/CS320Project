@@ -113,3 +113,7 @@ private int width;
 		currentScreen.add(prize);
 		this.add(currentScreen);
 	}
+         public void setTime(int time) {
+		
+		timerLabel.setText(""+(15 - time));
+	 }
