@@ -60,3 +60,20 @@ public void mouseClicked(MouseEvent e) {
 			e1.printStackTrace();
 		}
 	}
+        else {
+		 int selected = -1;
+		 
+		 if(mouseX > 65 && mouseX < 380 && mouseY > 450 && mouseY < 495) selected = 0;
+		 else if(mouseX > 420 && mouseX < 735 && mouseY > 450 && mouseY < 495) selected = 1;
+		 else if(mouseX > 65 && mouseX < 380 && mouseY > 525 && mouseY < 570) selected = 2;
+		 else if(mouseX > 420 && mouseX < 735 && mouseY > 525 && mouseY < 570) selected = 3;
+
+		 try {
+			 if(selected != -1)
+			menu.game.selectQuestion(selected);
+		} catch (IOException | InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	 }
+}
