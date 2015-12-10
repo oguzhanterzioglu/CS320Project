@@ -117,3 +117,25 @@ private int width;
 		
 		timerLabel.setText(""+(15 - time));
 	 }
+public void showLevel() throws IOException{
+		moneyTree.setIcon(getMoneyTree());
+		currentQuestion.setText("Current question:  " + (game.currentQuestion+1) );
+		
+		revalidate();
+	}
+	
+	public void show() {
+		
+		if(game.currentQuestion == 0) {
+			try
+		    {
+		        clip = AudioSystem.getClip();
+		        clip.open(AudioSystem.getAudioInputStream(new File("sound/sound.wav")));
+		        clip.start();
+		    }
+		    catch (Exception exc)
+		    {
+		        exc.printStackTrace(System.out);
+		    }
+			
+		}
