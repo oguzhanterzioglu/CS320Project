@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import javax.swing.Timer;
 
-public class Game { 
+public class Game {  
 
 	public QuestionPool questionpool;
 	public Menu menu;
