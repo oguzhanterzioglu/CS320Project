@@ -1,5 +1,5 @@
 
-private int width;
+private int width; 
 	private int height;
 	public Game game;
 	private JLabel currentScreen;
