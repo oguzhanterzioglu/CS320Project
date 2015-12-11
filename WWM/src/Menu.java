@@ -139,3 +139,53 @@ public void showLevel() throws IOException{
 		    }
 			
 		}
+else {
+			clip.stop();
+
+		}
+		prize.setText("");
+	    audienceImage.setIcon(null);
+		phoneLogo.setIcon(null);
+		phoneAnswer.setText("");
+		timerLabel.setText("");
+		questionLabel.setText(question.getQuestion());
+		choiceA.setText("A) " + question.getChoices()[0]);
+		choiceB.setText("B) " + question.getChoices()[1]);
+		choiceC.setText("C) " + question.getChoices()[2]);
+		choiceD.setText("D) " + question.getChoices()[3]);
+		try {
+			currentScreen.setIcon(getImage("image/ana ekran soru paneli.png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		revalidate();
+	}
+
+	public void setQuestion(Question question) {
+		
+		this.question = question;
+	}
+	
+	public void mainScreen() throws IOException {
+		
+		questionLabel.setText("");
+		choiceA.setText("");
+		choiceB.setText("");
+		choiceC.setText("");
+		timerLabel.setText("");
+		choiceD.setText("");
+		secondJokerCross.setIcon(null);
+		firstJokerCross.setIcon(null);
+		thirdJokerCross.setIcon(null);
+		audienceImage.setIcon(null);
+		phoneLogo.setIcon(null);
+		phoneAnswer.setText("");
+		currentQuestion.setText("");
+		if (moneyTree.getIcon() != null) moneyTree.setIcon(null);
+		gameStarted = false;
+		game.restart();
+		currentScreen.setIcon(getImage("image/ana ekran.png"));
+		revalidate();
+	}
+	
