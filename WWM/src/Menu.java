@@ -219,4 +219,31 @@ else {
 		
 		return img;
 	}
+	public void joker50() throws IOException  {
+		currentQuestion.setText("");
+		if (moneyTree.getIcon() != null) moneyTree.setIcon(null);
+		try {
+			currentScreen.setIcon(getImage("image/yuzde50.png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		int counter = 0;
+		int prev = 0;
+		while(counter<2) {
+			
+			int i = new Random().nextInt(question.getChoices().length);
+			if (i != question.getCorrectChoice() && i!=prev) {
+				prev = i;
+				question.getChoices()[i] = "";
+				counter++;
+			}	
+			
+		}
+		firstJokerCross.setIcon(getCrossImage());
+
+		show();
+	}
+	
 	
