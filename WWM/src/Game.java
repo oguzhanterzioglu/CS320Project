@@ -19,7 +19,7 @@ public class Game {
 	private int timertick;
 	
 	private int prizes[] = new int[12];
-	
+	 
 	public Game(Menu m) {
 		prizes[0] = 500;
 		prizes[1] = 1000;
