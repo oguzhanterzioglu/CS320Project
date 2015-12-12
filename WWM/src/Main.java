@@ -16,7 +16,7 @@ public class Main extends JFrame {
         Game game = new Game(menu);
         menu.game = game;
     }
-
+ 
     public static void main(String[] args) {
 
         SwingUtilities.invokeLater(new Runnable() {
