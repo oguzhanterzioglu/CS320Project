@@ -188,4 +188,35 @@ else {
 		currentScreen.setIcon(getImage("image/ana ekran.png"));
 		revalidate();
 	}
+	public void changeScreen() throws IOException {
+		
+		currentScreen.setIcon(getImage("image/ana ekran soru paneli.png"));
+		revalidate();
+	}
+	
+	public void jokerPhone() throws IOException{
+		currentQuestion.setText("");
+		if (moneyTree.getIcon() != null) moneyTree.setIcon(null);
+		phoneLogo.setIcon(getPhoneImage());
+		phoneAnswer.setForeground(Color.white);
+		phoneAnswer.setFont(new Font("Serif", Font.PLAIN, 18));
+		phoneAnswer.setText("<html>Hmm, I think its: <br>" + (question.getChoices()[question.getCorrectChoice()]) + "</html>");
+		secondJokerCross.setIcon(getCrossImage());
+		revalidate();
+		
+	}
+	
+	public ImageIcon getMoneyTree() throws IOException {
+		
+		ImageIcon img = new ImageIcon(ImageIO.read(new File("image/panel.png")).getScaledInstance(190, 270, Image.SCALE_SMOOTH));
+		
+		return img;
+	}
+	
+	public ImageIcon getPhoneImage() throws IOException {
+		
+		ImageIcon img = new ImageIcon(ImageIO.read(new File("image/phone.png")).getScaledInstance(40, 40, Image.SCALE_SMOOTH));
+		
+		return img;
+	}
 	
