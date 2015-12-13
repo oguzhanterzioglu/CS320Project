@@ -245,5 +245,30 @@ else {
 
 		show();
 	}
+	public void jokerAudience() throws IOException {
+		
+		currentQuestion.setText("");
+		moneyTree.setIcon(null);
+		if(question.getCorrectChoice() == 0)	audienceImage.setIcon(getAudienceImage("image/seyirciA.png"));
+		else if(question.getCorrectChoice() == 1) audienceImage.setIcon(getAudienceImage("image/seyirciB.png"));
+		else if(question.getCorrectChoice() == 2) audienceImage.setIcon(getAudienceImage("image/seyirciC.png"));
+		else if(question.getCorrectChoice() == 3) audienceImage.setIcon(getAudienceImage("image/seyirciD.png"));
+		thirdJokerCross.setIcon(getCrossImage());
+
+		revalidate();
+	}
 	
+	public ImageIcon getCrossImage() throws IOException {
+		
+		ImageIcon img = new ImageIcon(ImageIO.read(new File("image/cross.png")).getScaledInstance(40, 30, Image.SCALE_SMOOTH));
+		
+		return img;
+	}
+	
+	public ImageIcon getImage(String filename) throws IOException {
+		
+		ImageIcon img = new ImageIcon(ImageIO.read(new File(filename)).getScaledInstance(width, height-25, Image.SCALE_SMOOTH));
+		
+		return img;
+	}
 	
