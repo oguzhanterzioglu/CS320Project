@@ -75,4 +75,52 @@ public class QuestionPool {
           questionPool.get(1).add(q4);
           questionPool.get(1).add(q5);
           questionPool.get(1).add(q6);
-    
+    //level 3
+          Question q7 = new Question("Cumhuriyet altını kaç ayardır?", new String[] {
+                    "16",
+                    "18",
+                    "22",
+                    "24"
+                    }, 2);
+          Question q8 = new Question("İleri yaşlarda görülen mutluluk için kullanılan tabir hangisidir?", new String[] {
+          "Yolun yarısı",
+          "Aile saadeti",
+          "Yaşlılık",
+          "İkinci Bahar"
+          }, 3);    
+          Question q9 = new Question("Türkiye'nin 5. cumhurbaşkanı kimdir?", new String[] {
+                    "Cevdet Sunay",
+                    "İsmet İnönü",
+                    "Cemal Gürsel",
+                    "Celal Bayar"
+                    }, 0);
+         
+
+          questionPool.get(2).add(q7);
+          questionPool.get(2).add(q8);
+          questionPool.get(2).add(q9);
+         
+          //level 4
+          Question q10 = new Question("Çay toplanırken hangi renktir?", new String[] {
+          "Mavi",
+          "Yeşil",
+          "Kahverengi",
+          "Sarı"
+          }, 1);
+          Question q11 = new Question("Ağrı Dağı'nın Ağrı ili dışında hangi ilde sınırı vardır?", new String[] {
+          "Van",
+          "Artvin",
+          "Burdur",
+          "Iğdır"
+          }, 3);
+          Question q12 = new Question("Kesmece Bunlar deyimi hangi meyve türü için kullanılır?", new String[] {
+          "Elma",
+          "Üzüm",
+          "Karpuz",
+          "Kavun"
+          }, 2);
+         
+
+          questionPool.get(3).add(q10);
+          questionPool.get(3).add(q11);
+          questionPool.get(3).add(q12);
