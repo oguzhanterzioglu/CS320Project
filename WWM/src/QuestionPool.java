@@ -124,3 +124,52 @@ public class QuestionPool {
           questionPool.get(3).add(q10);
           questionPool.get(3).add(q11);
           questionPool.get(3).add(q12);
+      //level 5
+          Question q13 = new Question("Sol anahtarı hangi mesleği yapan kişilerin kullandığı bir terimdir?", new String[] {
+          "Çilingir",
+          "Marangoz",
+          "Tamirci",
+          "Müzisyen"
+          }, 3);
+          Question q14 = new Question("2005 yılında Türk lirasından kaç sıfır atılmıştır?", new String[] {
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                    }, 3);
+          Question q15 = new Question("Türkiye Büyük Millet Meclisi başka hangi adla anılır?", new String[] {
+                    "Danıştay",
+                    "Baro",
+                    "Parlamento",
+                    "Yüce Divan"
+                    }, 2);
+         
+
+          questionPool.get(4).add(q13);
+          questionPool.get(4).add(q14);
+          questionPool.get(4).add(q15);
+         
+          //level 6
+          Question q16 = new Question("Filistin halkının israil işgaline karşı başlattığı harekete verilen ad?", new String[] {
+                    "Partizan",
+                    "Arap Baharı",
+                    "Pasif Direniş",
+                    "İntifada"
+                    }, 3);
+          Question q17 = new Question("Aşçılarıyla ünlü ilçe hangisidir?", new String[] {
+                    "Susurluk",
+                    "Mengen",
+                    "Safranbolu",
+                    "Hereke"
+                    }, 1);
+          Question q18 = new Question("Hamaset ne demektir", new String[] {
+                    "Kahramanlık",
+                    "Umutsuzluk",
+                    "Düşmanlık",
+                    "Kıskançlık"
+                    }, 0);
+         
+
+          questionPool.get(5).add(q16);
+          questionPool.get(5).add(q17);
+          questionPool.get(5).add(q18);
