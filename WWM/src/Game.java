@@ -90,3 +90,108 @@ public void start() {
 		return menu.getQuestion();
 	}
 
+	public void selectQuestion(int index) throws IOException, InterruptedException {
+		if (index != getCurrentQuestion().getCorrectChoice()) {
+			menu.showWrong(index);
+
+			blinktimer = new Timer(500, new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					menu.toggleAnswer();
+				}
+			});
+			
+			blinktimer.start();
+			
+			timer2 = new Timer(1000, new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					menu.showVictory(getPrize(true));
+					timer.stop();
+				}
+			});
+			
+			timer = new Timer(5000, new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					blinktimer.stop();
+					menu.wrongAnswer();
+					timer.stop();
+				}
+			});
+
+			remaining.stop();
+			timer.start();
+		}
+		else {
+			menu.showCorrect();
+
+			timer = new Timer(1000, new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					Game.this.nextQuestion();
+					timer.stop();
+				}
+			});
+			timer.start();
+		}
+	}
+
+	public void usePhonejoker() throws IOException{
+
+		didUseJokerPhone = true;
+		menu.jokerPhone();
+	}
+	public void use50joker() throws IOException{
+
+		didUsejoker50 = true;
+		menu.joker50();
+	}
+
+	public void useAudinceJoker() throws IOException{
+
+		didUseJokerAudience = true;
+		menu.jokerAudience();
+	}
+	public void nextQuestion() {
+		currentQuestion++;
+		timertick = 0;
+
+		if (checkWin()) {
+			remaining.stop();
+			menu.showVictory(getPrize(false));
+		}
+		else {
+			menu.setQuestion(questionpool.getQuestion(currentQuestion));
+			menu.show();
+			remaining.stop();
+			remaining.start();
+		}
+	}
+
+	public boolean checkWin() {
+		if (currentQuestion >= questionpool.questionPool.size()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	public void withdraw() {
+
+		menu.showVictory(getPrize(true));
+
+		remaining.stop();
+		
+		
+		timer = new Timer(5000, new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					menu.mainScreen();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				timer.stop();
+				
+			}
+		});
+	}
+}
