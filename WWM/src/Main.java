@@ -17,4 +17,23 @@ public class Main extends JFrame {
         menu.game = game;
     }
  
-    
+    public static void main(String[] args) {
+
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+
+                Main ps = null;
+				try {
+					ps = new Main();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ps.setVisible(true);
+            }
+        });
+    }
+}
+  
+ 
