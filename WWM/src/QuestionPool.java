@@ -173,3 +173,155 @@ public class QuestionPool {
           questionPool.get(5).add(q16);
           questionPool.get(5).add(q17);
           questionPool.get(5).add(q18);
+      //level 7
+          Question q19 = new Question("Türkiye’de Nisan 1993’te internet ilk olarak nerede kullanılmaya başlanmıştır?", new String[] {
+                    "ODTÜ",
+                    "MİT",
+                    "Boğaziçi Üniversitesi",
+                    "Tübitak"
+                    }, 0);
+          Question q20 = new Question("Taliban'ın kelime anlamı nedir?", new String[] {
+                    "Savaşçılar",
+                    "Düşmanlar",
+                    "Yolcular",
+                    "Öğrenciler"
+                    }, 3);
+          Question q21 = new Question("Akıl oyunları filminde anlatılan Nobel ödüllü matematikçi kimdir?", new String[] {
+                    "Srinivasa Ramanujan",
+                    "Henri Poincaré",
+                    "John Nash",
+                    "Carl Friedrich Gauss"
+                    }, 2);
+         
+
+          questionPool.get(6).add(q19);
+          questionPool.get(6).add(q20);
+          questionPool.get(6).add(q21);
+         
+          //level 8
+          Question q22 = new Question("“bugün gelmedi ama yarın mutlaka gelecek” hangi kitabın ünlü cümlesidir?", new String[] {
+                    "Büyük Umutlar",
+                    "Sevgili",
+                    "Yüzyıllık Yalnızlık",
+                    "Godot'u Beklerken"
+                    }, 3);
+          Question q23 = new Question("Kökeni yunanca olan “kozmopolit” kelimesinin anlamı nedir?", new String[] {
+                    "Kalabalık bölge",
+                    "Evrenin Şehri",
+                    "Dünya vatandaşı",
+                    "Dünya Irkları"
+                    }, 2);
+          Question q24 = new Question("Amin maalouf’un semerkant kitabında kimin hayat hikayesi anlatılmaktadır?", new String[] {
+                    "Ömer Hayyam",
+                    "Cengiz Han",
+                    "Arşimed",
+                    "İbn-i Sina"
+                    }, 0);
+         
+
+          questionPool.get(7).add(q22);
+          questionPool.get(7).add(q23);
+          questionPool.get(7).add(q24);
+         
+
+          //level 9
+          Question q25 = new Question("Nobel ödülünden kazandığı parayla, eski karısına nafaka ödeyen bilim adamı kimdir? ", new String[] {
+                    "Ivan Pavlov",
+                    "Albert Einstein",
+                    "Alexander Fleming",
+                    "Pierre Curie"
+                    }, 1);
+          Question q26 = new Question("Rıfat Ilgaz, “hababam sınıfı” karakterlerinden hangisinde kendisini anlatmıştır?", new String[] {
+                    "Güdük Necmi",
+                    "Tulum Hayri",
+                    "Damat Ferit",
+                    "Mahmut Hoca"
+                    }, 0);
+          Question q27 = new Question("Yunanca ecclesia kelimesinden türeyen kilise sözcüğünün anlamı hangisidir?", new String[] {
+                    "Yakarmak",
+                    "Beklemek",
+                    "Toplamak",
+                    "Korunmak"
+                    }, 2);
+         
+
+          questionPool.get(8).add(q25);
+          questionPool.get(8).add(q26);
+          questionPool.get(8).add(q27);
+         
+          //level 10
+          Question q28 = new Question("Antik ve orta çağ yüksek eğitiminin temeli olan 7 özgür sanattan biri hangisidir?", new String[] {
+                    "Gökbilim",
+                    "Politika",
+                    "Anatomi",
+                    "Aşçılık"
+                    }, 0);
+          Question q29 = new Question("Güneş sistemi'nin dışına fırlatılan 'voyager' ile uzaylılara gönderilen türkçe mesaj nedir ?", new String[] {
+                    "Sabah şerifleriniz hayrolsun",
+                    "Merhaba komşu",
+                    "Zaman bizi bir araya getirsin",
+                    "Dünyada barış kainatta barış"
+                    }, 0);
+          Question q30 = new Question("1946'da louis reard'ın yarattığı moda dünyasında devrim yaratan giysi nedir? ", new String[] {
+                    "Döpiyes",
+                    "Külotlu çorap",
+                    "Bikini",
+                    "Mini etek"
+                    }, 2);
+         
+
+          questionPool.get(9).add(q28);
+          questionPool.get(9).add(q29);
+          questionPool.get(9).add(q30);
+         
+          //level 11
+          Question q31 = new Question("Türkiye’de, kıtlık nedeniyle, 1942 yılında hangisinin imalatı yasaklanmıştır? ", new String[] {
+                    "Ekmek",
+                    "Köfte",
+                    "Pasta",
+                    "Bira"
+                    }, 2);
+          Question q32 = new Question("Eski yunancada 'Süt' anlamına gelen sözcükten türeyen astronomi terimi hangisidir?", new String[] {
+                    "asteroit",
+                    "zodyak",
+                    "plazma",
+                    "galaksi"
+                    }, 3);
+          Question q33 = new Question("nasa'nın, ekim 1995 tarihinde, uzayda yetiştirmeyi başardığı ilk bitki hangisidir?", new String[] {
+                    "Şeker Pancarı",
+                    "Patates",
+                    "Bezelye",
+                    "Çilek"
+                    }, 1);
+         
+
+          questionPool.get(10).add(q31);
+          questionPool.get(10).add(q32);
+          questionPool.get(10).add(q33);
+         
+          //level 12
+          Question q34 = new Question("Dünya'da gece aydınlatılan ilk cadde nerededir?", new String[] {
+                    "İstanbul",
+                    "Roma",
+                    "Kudüs",
+                    "Antakya"
+                    }, 3);
+          Question q35 = new Question("'Tüm insanlar, doğaları gereği bilmeyi arzular' sözü kime aittir? ", new String[] {
+                    "Hz. Ali",
+                    "Aristo",
+                    "Stephen Hawking",
+                    "Vladimir Lenin"
+                    }, 1);
+          Question q36 = new Question("'Ben Marksist değilim' sözü kime aittir?", new String[] {
+                    "Charles Darwin",
+                    "Mihail Gorbaçov",
+                    "Charlie Chaplin",
+                    "Karl Marx"
+                    }, 3);
+         
+
+          questionPool.get(11).add(q34);
+          questionPool.get(11).add(q35);
+          questionPool.get(11).add(q36);
+     }
+}
