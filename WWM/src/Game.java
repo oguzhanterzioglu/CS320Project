@@ -174,3 +174,24 @@ public void start() {
 		}
 	}
 
+	public void withdraw() {
+
+		menu.showVictory(getPrize(true));
+
+		remaining.stop();
+		
+		
+		timer = new Timer(5000, new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					menu.mainScreen();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				timer.stop();
+				
+			}
+		});
+	}
+}
