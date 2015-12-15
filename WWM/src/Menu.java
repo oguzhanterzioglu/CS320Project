@@ -271,4 +271,112 @@ else {
 		
 		return img;
 	}
+	public ImageIcon getAudienceImage(String filename) throws IOException{
+		
+		ImageIcon img = new ImageIcon(ImageIO.read(new File(filename)).getScaledInstance(200, 250, Image.SCALE_SMOOTH));
+		
+		return img;
+	}
+
+	public void showWrong(int index) throws IOException {
+		try
+	    {
+	        clip = AudioSystem.getClip();
+	        clip.open(AudioSystem.getAudioInputStream(new File("sound/lose.wav")));
+	        clip.start();
+	    }
+	    catch (Exception exc)
+	    {
+	        exc.printStackTrace(System.out);
+	    }		
+		
+		switch (index) {
+			case 0:
+				currentScreen.setIcon(getImage("image/asikkipaneli.png"));
+				break;
+			case 1:
+				currentScreen.setIcon(getImage("image/bsikkipaneli.png"));
+				break;
+			case 2:
+				currentScreen.setIcon(getImage("image/csikkipaneli.png"));
+				break;
+			case 3:
+				currentScreen.setIcon(getImage("image/dsikkipaneli.png"));
+				break;
+		}
+		
+		revalidate();
+	}
+
+	public void showCorrect() throws IOException {
+		switch(question.getCorrectChoice()) {
+		case 0:
+			currentScreen.setIcon(getImage("image/asikkidogru.png"));
+			break;
+		case 1:
+			currentScreen.setIcon(getImage("image/bsikkidogru.png"));
+			break;
+		case 2:
+			currentScreen.setIcon(getImage("image/csikkidogru.png"));
+			break;
+		case 3:
+			currentScreen.setIcon(getImage("image/dsikkidogru.png"));
+			break;	
+		}
+		
+		revalidate();
+		
+	}
+
+	public void showVictory(int prize) {
+		
+		this.prize.setText("Your Prize: " + prize);
+		try {
+			mainScreen();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	
+	public void wrongAnswer(){
+
+		this.prize.setText("Your Prize: " + game.getPrize(true));
+		try {
+			mainScreen();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void toggleAnswer() {
+		if(question.getCorrectChoice() == 0) {
+			if (!choiceA.getText().equals(""))
+				choiceA.setText("");
+			else
+				choiceA.setText("A) " + question.getChoices()[question.getCorrectChoice()]);
+		}
+		else if(question.getCorrectChoice() == 1) {
+			if (!choiceB.getText().equals(""))
+				choiceB.setText("");
+			else
+				choiceB.setText("B) " + question.getChoices()[question.getCorrectChoice()]);
+		}
+		else if(question.getCorrectChoice() == 2) {
+			if (!choiceC.getText().equals(""))
+				choiceC.setText("");
+			else
+				choiceC.setText("C) " + question.getChoices()[question.getCorrectChoice()]);
+		}
+		else if(question.getCorrectChoice() == 3) {
+			if (!choiceD.getText().equals(""))
+				choiceD.setText("");
+			else
+				choiceD.setText("D) " + question.getChoices()[question.getCorrectChoice()]);
+		}
+
+		revalidate();
+	}
+}
+
